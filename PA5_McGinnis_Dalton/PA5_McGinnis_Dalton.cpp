@@ -73,7 +73,7 @@ int main()
 		switch (choice)
 		{
 		case '1':		// Average
-			displayAverages(students, grades, studentCount);
+			//displayAverages(students, grades, studentCount);
 			break;
 
 		case '2':		// Maximum 
@@ -142,11 +142,28 @@ void loadStudentArray(string fileName, Student studentsArray[], int size)
 			ssin >> grade4;
 			ssin >> grade5;
 			total = grade1 + grade2 + grade3 + grade4 + grade5;
+			studentsArray[i].grades[0] = grade1;
+			studentsArray[i].grades[1] = grade2;
+			studentsArray[i].grades[2] = grade3;
+			studentsArray[i].grades[3] = grade4;
+			studentsArray[i].grades[4] = grade5;
 			studentsArray[i].average = total / 5;
-			studentsArray[i].min = studentsArray[5].min;
-			studentsArray[i].max = studentsArray[1].max;
+			int j = 0;
+			int max = 0;
+			int min = 100;
+
+			for (j = 0; j < MAX_GRADES; j++) 
+			{
+				if (studentsArray[i].grades[j] > max)
+					max = studentsArray[i].grades[j];
+				if (studentsArray[i].grades[j] < min)
+					min = studentsArray[i].grades[j];
+			}
+			studentsArray[i].min = min;
+			studentsArray[i].max = max;
 
 			cout << line << endl;
+			i++;
 		}
 	}
 	// close the file 
@@ -165,9 +182,9 @@ void sortStudentArray(Student studentsArray[], int size)
 								// check all the remaining elements from 0 to i
 		for (int j = 0; j < i; j++)
 		{
-			if (studentsArray[j].grades > studentsArray[j + 1].grades)
+			if (studentsArray[j].max > studentsArray[j + 1].max)
 			{
-				swap(studentsArray[j].grades, studentsArray[j + 1].grades);
+				swap(studentsArray[j], studentsArray[j + 1]);
 				didSwap = true;
 			}
 		}	// end of inner loop

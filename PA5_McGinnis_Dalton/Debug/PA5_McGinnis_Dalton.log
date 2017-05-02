@@ -1,4 +1,6 @@
 ﻿  PA5_McGinnis_Dalton.cpp
-f:\cosc 1436\programming assignments\programming assignments\pa5_mcginnis_daltonfolder\pa5_mcginnis_dalton\pa5_mcginnis_dalton\pa5_mcginnis_dalton.cpp(246): warning C4715: 'getLetterGrade': not all control paths return a value
-  PA5_McGinnis_Dalton.vcxproj -> F:\COSC 1436\Programming Assignments\Programming Assignments\PA5_McGinnis_DaltonFolder\PA5_McGinnis_Dalton\Debug\PA5_McGinnis_Dalton.exe
-  PA5_McGinnis_Dalton.vcxproj -> F:\COSC 1436\Programming Assignments\Programming Assignments\PA5_McGinnis_DaltonFolder\PA5_McGinnis_Dalton\Debug\PA5_McGinnis_Dalton.pdb (Full PDB)
+c:\users\robbie.hickey\desktop\pa5_mcginnis_dalton\pa5_mcginnis_dalton\pa5_mcginnis_dalton.cpp(158): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\robbie.hickey\desktop\pa5_mcginnis_dalton\pa5_mcginnis_dalton\pa5_mcginnis_dalton.cpp(160): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\robbie.hickey\desktop\pa5_mcginnis_dalton\pa5_mcginnis_dalton\pa5_mcginnis_dalton.cpp(265): warning C4715: 'getLetterGrade': not all control paths return a value
+  PA5_McGinnis_Dalton.vcxproj -> C:\Users\robbie.hickey\Desktop\PA5_McGinnis_Dalton\Debug\PA5_McGinnis_Dalton.exe
+  PA5_McGinnis_Dalton.vcxproj -> C:\Users\robbie.hickey\Desktop\PA5_McGinnis_Dalton\Debug\PA5_McGinnis_Dalton.pdb (Full PDB)

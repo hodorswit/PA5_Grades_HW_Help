@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PA5_McGinnis_Dalton", "PA5_McGinnis_Dalton\PA5_McGinnis_Dalton.vcxproj", "{5E2D6AAA-91AE-4D2C-9ABC-07EF2CF5BDE3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AssignmentDetails", "AssignmentDetails", "{5C9EAEF5-3925-461B-A310-EA4675122921}"
+	ProjectSection(SolutionItems) = preProject
+		Programming Assignment 5.pdf = Programming Assignment 5.pdf
+		template.cpp = template.cpp
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
